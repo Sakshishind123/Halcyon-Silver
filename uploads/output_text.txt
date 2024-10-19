@@ -1,0 +1,25 @@
+Bansilal Ramnath Agarwal Charitable Trust’s
+Vishwakarma Institute of Information Technology
+(An Autonomous Institute affiliated to Savitribai Phule Pune University)
+(Approved by AICTE, Delhi)
+NAAC Accredited with ‘A’ Grade, An ISO 9001:2008 Certified Certificate
+ACM STUDENT CHAPTER, VIIT
+DATE:
+ACM Codesprint Details
+27 AUG, 2024
+Overview:
+Codesprint is an exciting competitive programming event designed to test participants' problem-solving
+skills in various domains, including Object-Oriented Programming (OOP), Web Development, and Data
+Structures & Algorithms (DSA). • Competition Format:
+Round 1: Online elimination round with MCQ questions covering OOP, Web Development, and
+DSA. Round 2: Final round for top performers, featuring more advanced problem-solving tasks, to be
+held in room B001. Rules:
+Round 1 (Elimination Round):
+Date: 28th August
+Time: 7:00 PM - 8:00 PM
+Mode: Online
+Format: MCQs covering OOP, Web Development, and a coding contest(Fundamentals of Data
+Structures)
+Round 2 (Final Round):
+Date: 29th August
+Location and Time will be conveyed soon.

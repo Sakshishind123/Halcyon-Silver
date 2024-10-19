@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Handwritten Text Recognition Tool</title> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+    <style>
+        body {
+            background-color: #f4f6f7;
+        }
+        /* Header Styling */
+        header {
+            background-color: #001f3f; /* Dark blue */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Increased font size */
+            margin: 0;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #001f3f; /* Dark blue */
+            padding: 2px 0;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffcc00; /* Gold */
+            font-weight: bold; /* Bold text */
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+            padding: 10px 15px; /* Added padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #ffd700; /* Bright yellow on hover */
+            background-color: rgba(255, 204, 0, 0.2); /* Light yellow background on hover */
+        }
+
+        .navbar-toggler {
+            background-color: #ffcc00; /* Gold color for the toggle button */
+        }
+
+        .btn-primary {
+            background-color: #003366;
+            border: none;
+            font-weight: bold; /* Bold text */
+        }
+
+        .btn-primary:hover {
+            background-color: #ffcc00;
+            color: #003366;
+        }
+
+        footer {
+            background-color: #001f3f; /* Dark blue */
+            color: white;
+            padding: 20px 0;
+        }
+
+        .dark-blue-bg {
+            background-color: #001f3f; /* Dark blue */
+            color: white;
+            padding: 20px 0;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: hsl(210, 66%, 19%); /* Placeholder color */
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Section Styling */
+        .call-to-action {
+            background-color: #0c335b; /* Accent Blue */
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .call-to-action p {
+            font-size: 1.2rem;
+        }
+
+        .call-to-action .btn {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .image-placeholder {
+                height: 200px;
+            }
+
+            .call-to-action {
+                padding: 20px;
+            }
+
+            .call-to-action p {
+                font-size: 1rem;
+            }
+
+        }
+
+        video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures it's behind other elements */
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header with Sticky Navbar -->
+    <header class=" text-white text-center py-4">
+        <!-- <h1>Handwritten Text Recognition Tool</h1> -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-warning" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/upload">Upload</a> <!-- Link to upload page -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Welcome Section -->
+        <section class="text-center mb-5">
+            <h2>Welcome to the Handwritten Text Recognition Tool</h2>
+            <p>This tool allows you to upload handwritten notes and converts them into text. Additionally, it summarizes the content for quick understanding.</p>
+            <a href="/upload" class="btn btn-primary btn-lg mt-3">Get Started</a> <!-- Button to go to upload page -->
+
+            <video id="video-background" autoplay muted loop>
+                <source src="videos/3d-animation-id-card.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+        <p>&copy; 2024 Handwritten Text Recognition Tool. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Handwritten Text Recognition Tool</title>
+</head>
+<body>
+    <header class="text-white text-center py-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-warning" href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#upload">Upload</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center">Upload Your Handwritten Notes</h2>
+        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="file" class="form-control-file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </main>
+
+    <footer class="text-white text-center py-4">
+        <p>&copy; 2024 Handwritten Text Recognition Tool. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

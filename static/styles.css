@@ -1,0 +1,58 @@
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+/* Header Styles */
+header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Section Styles */
+main {
+    margin-top: 20px; /* Add space above the main content */
+}
+
+/* Section Title Styles */
+h2, h3 {
+    color: #343a40; /* Darker color for section titles */
+}
+
+
+/* Button Styles */
+.btn-primary {
+    background-color: #10437a; /* Bootstrap primary color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #378ae2; /* Darker shade on hover */
+}
+
+/* Card Styles */
+.card {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* File Upload Styles */
+.form-control-file {
+    display: inline-block; /* Align with button */
+    margin-bottom: 15px; /* Space below file input */
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensures it starts from the left edge */
+    right: 0; /* Ensures it spans to the right edge */
+    width: 100%;
+    background-color: #001f3f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
