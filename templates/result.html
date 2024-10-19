@@ -1,53 +1,25 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>OCR Results</title>
-    <style>
-        body {
-            background-color: #f4f6f7;
-        }
-    </style>
+    <title>Summarization Result</title>
 </head>
 <body>
-    <header class="text-white text-center py-4">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand text-warning" href="{{ url_for('index') }}">Home</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <h1>Summarization Result</h1>
+    <h2>Extracted Text</h2>
+    <p>{{ extracted_text }}</p>
 
-    <main class="container my-5">
-        <h2 class="text-center">OCR Results</h2>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Extracted Text:</h5>
-                <pre>{{ extracted_text }}</pre>
-            </div>
-        </div>
-        <a href="/upload" class="btn btn-primary btn-lg mt-3">Upload Another File</a>
-    </main>
+    <h2>Summarized Text</h2>
+    <p>{{ summarized_text }}</p>
 
-    <footer class="text-white text-center py-4">
-        <p>&copy; 2024 Handwritten Text Recognition Tool. All Rights Reserved.</p>
-    </footer>
+    <a href="{{ url_for('index') }}">Go back</a>
+</body>
+</html>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.
+
+
+
+         -->
