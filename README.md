@@ -1,3 +1,3 @@
-# L-T_NEUROHACK
+# Halcyon-Silver
 Text Summarization Tool for Handwritten Images 
 ..
